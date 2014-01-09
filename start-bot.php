@@ -15,7 +15,7 @@ $irc->registerActionhandler(SMARTIRC_TYPE_CHANNEL, '^(Hi|hi|hello|HELLO)', $bot,
 // connect to server.
 $irc->connect('irc.freenode.net', 6667);
 // login.
-$irc->login($config['nick'], 'Net_SmartIRC Client '.SMARTIRC_VERSION, 0, 'phplist.com');
+$irc->login($config['nick'], 'Net_SmartIRC Client '.SMARTIRC_VERSION, 0, 'phplist.com',$config['password']);
 // Join the channels.
 $irc->join($config['chan']);
 // Set default topics.
